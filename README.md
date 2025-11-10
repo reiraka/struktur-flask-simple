@@ -1,1 +1,5 @@
 # struktur-flask-simple
+
+Aplikasi ini dibuat menggunakan Flask dan Flask-SQLAlchemy untuk menghubungkan Python dengan database PostgreSQL.
+Program ini menampilkan data dari tabel `Tb_mahasiswa` serta menyediakan beberapa route sederhana seperti `/mahasiswa`, `/get`, `/post`, `/delete`, dan `/detail/<nama>`.
+Sebelum menjalankan aplikasi, pastikan kamu sudah menginstal semua dependensi dengan perintah `pip install flask flask_sqlalchemy psycopg2-binary`. Setelah itu, ubah pengaturan koneksi database di file `main.py` pada bagian `app.config['SQLALCHEMY_DATABASE_URI']` sesuai dengan username, password, host, port, dan nama database milikmu. Untuk menjalankan aplikasi, buka terminal di folder proyek, lalu jalankan perintah `python main.py`. Jika berhasil, buka browser dan akses `http://127.0.0.1:5000/mahasiswa` untuk melihat data mahasiswa. Aplikasi ini bertujuan sebagai latihan dasar dalam menggunakan Flask, SQLAlchemy, dan PostgreSQL untuk membangun aplikasi web sederhana dengan koneksi database. Proyek ini dibuat oleh Rey Raka.
